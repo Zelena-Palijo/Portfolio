@@ -10,7 +10,7 @@ h1 {
     font-family: "serif", Garamond; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
-    color:#FFB6C1; 
+    color:#3CB371; 
 }
 
 /* Heading 1 element hover effect */
