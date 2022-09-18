@@ -231,7 +231,7 @@ footer {
 }
 
 /*NEXT and PREVIOUS buttons*/
-.Previous,.Next{
+.Previous, .Next {
     cursor:pointer;
     position:absolute;
     top:50%;
@@ -242,13 +242,13 @@ footer {
     font-size:1.5vw;
     border-radius:0 3px 3px 0;
     user-select:none;
-    transition:0.6s;
+    transition:0.6s ease;
 }
 
 /*Positioning the next button on the R hand side*/
 .Next{
     right:0;
-    border-radius:3px 0 0 3 px; 
+    border-radius:3px 0 0 3px; 
 }
 
 /*hover effect on slideshow buttons*/
