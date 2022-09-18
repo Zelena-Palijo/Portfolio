@@ -1,7 +1,24 @@
 /***** GENERAL STYLING *****/
+/*Affects entire document */
+html{
+    scroll-behavior:smooth;
+}
+
+
 /* Body */
 body {
-    margin: 0%  /* This ensures our site displays all the way to the edge of the browser screen */
+    margin: 0%; /* This ensures our site displays all the way to the edge of the browser screen */
+    opacity:1; /*affect page loading fade in effect*/
+    transition:3s opacity; /*3sec fade in*/
+    letter-spacing:.2vw; /*vw relative measurement, 1vw is equal to 1% of the viewport width*/
+    font-family:Avant Garde, Helvetica;
+    font-size:1.5vw;
+    overflow-x:hidden; /*prevents horiz scroll bar from appearing when quote hover*/
+    user-select:none; /*prevents text on the webage from being highlighted*/
+}
+/* contributes to the fade effect for the page that occurs when the page is loaded*/
+body.fade-out{
+    opactiy:.1; /*sets opacity level at start of page load*/
 }
 
 /* Heading 1 elements */
@@ -23,16 +40,17 @@ h1:hover {
 /* Styling for portfolio title text */
 .white-text {
     color: #fff; /* This is used to change the color of the portfolio title text */
+    padding-top:10vh; /*adds padding equal to 10% of the viewport height to to top of the portfolio title text */
 }
 
-/* Paragraph elements */
+/* Paragraph elements >>> changing from px to vw*/
 p {
     font-family: Perpetua, Rockwell Extra Bold;
     text-align: justify; /* Justify text within paragraph elements */
-    letter-spacing: 1px; /* This expands the text slightly */
-    font-size: 20px;
-    padding-left: 20px; /* Adds padding to the left of the paragraph element */
-    padding-right: 20px; /* Adds padding to the right of the paragraph element */
+    letter-spacing: .1vw; /* This expands the text slightly */
+    font-size: 2.5vw;
+    padding-left: 1vw; /* Adds padding to the left of the paragraph element */
+    padding-right: 1vw; /* Adds padding to the right of the paragraph element */
 }
 
 /* Paragraph element hover effect */
@@ -55,6 +73,8 @@ p:hover {
 /* Anchor elements */
 a {
     color: blue; /* This ensures all links are blue */
+    cursor: pointer;
+    text-decoration: underline; /*this ensures all links are underlined*/
 }
 
 /* Quotation elements */
@@ -67,10 +87,9 @@ img {
     filter: grayscale(75%); /* This rids our pictures of 75% of their color */
     border-radius: 8px; /* Gives all images slightly rounded corners */
     max-width: 100%; /* Ensures all images stay within the width of their container */
-    height: 340px; /* Sets the height of all images */
+    max-height: 100%; /* Ensures all images stay within the height of their container */
     display: block; /* By specifying block display we can ensure our images are able to be centered */
-    margin-left: auto; /* In combination with "margin-right: auto" this centers all images */
-    margin-right: auto;
+    margin: auto auto auto auto; /*This centers all images */
 }
 
 /* Image element hover effects */
