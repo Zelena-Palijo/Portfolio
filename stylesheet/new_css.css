@@ -19,9 +19,9 @@ html{
 
 /* NAVBAR STYLING */
 /* navbar menu */
-.navbar {
+.nav flex-column {
   width: 160px;
-  position: fixed;
+  position: -webkit-sticky;
   z-index: 1; /*stays on top*/
   top: 0; /*stays at the top*/
   left: 0;
@@ -31,7 +31,7 @@ html{
 }
 
 /* navbar menu links */
-.navbar a {
+.nav flex-column a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: 25px;
@@ -40,7 +40,7 @@ html{
 }
 
 /* change link color when hovered over */
-.navbar a:hover {
+.nav flex-column a:hover {
   color: rgb(235, 105, 150);
 }
 
