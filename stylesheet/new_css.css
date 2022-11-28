@@ -1,0 +1,12 @@
+/***** GENERAL STYLING *****/
+/*Affects entire document */
+html{
+  scroll-behavior:smooth;
+}
+
+/* BODY */
+
+
+.background {
+  background: linear-gradient(to right, white,  #86945e);
+}
