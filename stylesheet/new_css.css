@@ -44,6 +44,12 @@ html{
   color: rgb(235, 105, 150);
 }
 
+/* Styling rest of the page */
+.main {
+  margin-left:160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
 
 
 .footer {
