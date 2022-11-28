@@ -8,5 +8,14 @@ html{
 
 
 .background {
-  background: linear-gradient(to right, white,  #86945e);
+  width: 100%;
+  height: 400px;
+  background-image: url(), linear-gradient(to right, white,  #86945e); /*include screenshot of code here */
+
+}
+
+
+.footer {
+  text-align: right;
+  color:white;
 }
