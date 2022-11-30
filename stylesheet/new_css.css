@@ -25,7 +25,7 @@ html{
   margin: 25px;
   width: 1000px;
   height: 1000px;
-  outline: none;
+  outline: black 5px dotted;
   /* setup */
   position: relative;
 }
@@ -38,6 +38,27 @@ html{
   top: 10%;
   left: 50%;
   margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+}
+
+
+.fa {
+  padding: 20px;
+  font-size: 500px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-github {
+  background: #86945e;
+  color: white;
 }
 
 
