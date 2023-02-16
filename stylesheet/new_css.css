@@ -25,7 +25,6 @@ html{
   margin: 25px;
   width: 1000px;
   height: 1000px;
-  outline: black 5px dotted;
   /* setup */
   position: relative;
 }
@@ -38,27 +37,33 @@ html{
   top: 10%;
   left: 50%;
   margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
+  color: rgb(199, 112, 144);
+}
+
+a{
+  color: rgb(199, 112, 144);
 }
 
 
 .fa {
   padding: 20px;
-  font-size: 500px;
+  font-size: 48px;
   width: 100px;
   height: 100px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
   border-radius: 50%;
+  
 }
 
 .fa:hover {
     opacity: 0.7;
 }
 
+
 .fa-github {
-  background: #86945e;
-  color: white;
+  color: rgb(199, 112, 144);
 }
 
 
@@ -69,3 +74,92 @@ html{
   text-align: right;
   color:white;
 }
+
+
+/***** CONTACT FORM STYLING *****/
+/*button used to open the contact form -fixed at the bottom of the page*/
+.Pop_Up_Button{
+  position:fixed;
+  bottom:1.75vw;
+  left:1.75vw;
+  width:10vw;
+  
+  color: rgb(199, 112, 144);
+  border:solid rgb(199, 112, 144);
+  cursor:pointer;
+  
+}
+
+
+
+/*styling for the contact form*/
+.form-popup{
+  z-index:8; /*makes sure contact form above all other elements on page*/
+  display:none; /*use js to show contact form*/
+  position:fixed;
+  bottom:.5vw;
+  right:.5vw;
+}
+
+/*form styling*/
+.form-container{
+  max-width:40vw; /*relative sizing fo the form container -49% of the viewport width*/
+  padding:1vw; 
+  background-color:#ffffff;
+  opacity: 85%;
+}
+
+/*input fields*/
+.form-container input[type=text]{
+  width:100%;
+  padding:.93vw;
+  margin:.6vw 0 .6vw 0;
+  border:none;
+  background:Gainsboro;
+  font-size:1vw;
+}
+
+/*general stling for all buttons*/
+button{
+  font-family:"Trebuchet MS", Optima;
+  letter-spacing:.3vw;
+  font-size:1.5vw;
+  font-weight:bold;
+  padding:1.5vw;
+  cursor:pointer;
+  width:100%;
+  height:auto;
+}
+
+/*hover effect for contact and submit buttons*/
+button:hover,.form-container .btn:hover{
+  color: rgb(199, 112, 144);
+  background-color:white;
+  transition-duration:1s;
+  -webkit-transition-duration:1s;
+  border-color:silver;
+}
+
+/*submit button*/
+.form-container .btn{
+
+  color:black;
+  background-color:rgb(199, 112, 144);
+  border-color:rgb(199, 112, 144);
+  margin-bottom:1vh; /*adds space between submit button and close button*/
+}
+
+/*close button*/
+.form-container .cancel{
+  background-color:rgb(199, 112, 144);
+  color:black;
+}
+
+/*styling for close button on hover*/
+.form-container .cancel:hover{
+  background-color:white;
+  color:rgb(199, 112, 144);
+  border-color:rgb(199, 112, 144);
+}
+
+/***** END OF CONTACT FORM STYLING *****/

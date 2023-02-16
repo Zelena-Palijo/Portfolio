@@ -8,7 +8,8 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="stylesheet/new_css.css">
         <!-- Add icon library -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     </head>
 
     <!--Body-->
@@ -32,26 +33,26 @@
       <!-- second nav bar option , fix IDs ?-->  
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <a class="nav-link active, text-white" href="#">Home</a>
+          <a class="nav-link active, text-white" href="#Home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active, text-white" href="#">About</a>
+          <a class="nav-link active, text-white" href="#About">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active, text-white" href="#">Highlights</a>
+          <a class="nav-link active, text-white" href="#Highlights">Project Highlights</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link active, text-white" href="#">Talk to me</a>
-        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link active, text-white" href="#Contact">Talk to me</a>
+        </li> -->
       </ul>
 
 
       <!-- HOME PAGE (Also about section)-->
 
-      <div class="main" id="home">
+      <div class="main" id="Home">
         
         <!--INSERT HEADSHOT HERE?-->
-        <div class="center" id="about">
+        <div class="center" id="About">
             <br>
             <p>I am a recent graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp. I am a full-stack developer with experience in JavaScript, SQL, C#, and more! </p>
             <br>
@@ -60,18 +61,33 @@
 
         <!-- Coding Highlights -->
 
-        <div class="center" id="highlights">
-
-        
+        <div class="center" id="Highlights">
+          <p>Check out my previous and current projects here: </p>
+          <div class="logo">
+            <a href="https://github.com/Zelena-Palijo" class="fa fa-github fa-4x"></a>
+          </div>
         </div>
 
 
-        <div class="center" id="contact">
-            <br>
-            <p>Let's talk! Find me on </p>
-            <br>
-            <a href="https://github.com/Zelena-Palijo" class="fa fa-github"></a>
-
+        <div class="center" id="Contact">
+          <button onclick="openForm()" class="Pop_Up_Button">Talk to me!</button>
+          <div class="form-popup" id="myForm">
+              <form action="https://formspree.io/zpali853@gmail.com" method="POST" class="form-container">
+                  <!--using formspree.io to send contact form to email address-->
+                  <h1>I'd love to hear from you</h1>
+                  <label for="name"><b>name</b></label>
+                      <input type="text" placeholder="Type your name here" name="name" required>
+                  <label for="phone"><b>phone</b></label>
+                      <input type="text" placeholder="Type your phone number here" name="phone">
+                  <label for="email"><b>email</b></label>
+                      <input type="text" placeholder="Type your email address here" name="email" required>
+                  <label for="message"><b>message</b></label>
+                      <input type="text" placeholder="Type your message here" name="message">
+                  
+                  <button type="submit" class="btn">SUBMIT</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+              </form>
+          </div>
         </div>
 
       </div>
@@ -91,6 +107,6 @@
                 <br>
             </p>
         </footer>
-        <script src=""></script> <!-- Add new JS file name here -->
+        <script src="js/new_portfolio.js"></script> <!-- Add new JS file name here -->
     </body>
 </html>
