@@ -45,6 +45,7 @@ a{
 }
 
 
+
 .fa {
   padding: 20px;
   font-size: 48px;
@@ -77,6 +78,7 @@ a{
 
 
 /***** CONTACT FORM STYLING *****/
+
 /*button used to open the contact form -fixed at the bottom of the page*/
 .Pop_Up_Button{
   position:fixed;
