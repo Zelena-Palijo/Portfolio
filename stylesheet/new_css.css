@@ -1,3 +1,9 @@
+/* Website colors */
+:root {
+--main-color: #86945e; /* matcha */
+--main-color--light: white; /* white */
+--text-color-main: rgb(199, 112, 144);
+}
 
 
 
@@ -13,7 +19,7 @@ html{
 .background {
   width: 100%;
   height: 400px;
-  background-image: url(), linear-gradient(to right, white,  #86945e); 
+  background-image: url(), linear-gradient(to right, var(--main-color--light), var(--main-color)); 
   /*include screenshot of code here */
 }
 
@@ -37,11 +43,11 @@ html{
   top: 10%;
   left: 50%;
   margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
-  color: rgb(199, 112, 144);
+  color: var(--text-color-main);
 }
 
 a{
-  color: rgb(199, 112, 144);
+  color: var(--text-color-main);
 }
 
 
@@ -73,7 +79,7 @@ a{
   bottom: 0;
   width: 100%;
   text-align: right;
-  color:white;
+  color: var(--main-color--light);
 }
 
 
@@ -86,8 +92,8 @@ a{
   left:1.75vw;
   width:10vw;
   
-  color: rgb(199, 112, 144);
-  border:solid rgb(199, 112, 144);
+  color: var(--text-color-main);
+  border:solid var(--text-color-main);
   cursor:pointer;
   
 }
@@ -95,20 +101,22 @@ a{
 
 
 /*styling for the contact form*/
-.form-popup{
+/* .form-popup{
   z-index:8; /*makes sure contact form above all other elements on page*/
-  display:none; /*use js to show contact form*/
-  position:fixed;
+  /*use js to show contact form*/
+  /* display: none;  */
+  /* position:fixed;
   bottom:.5vw;
-  right:.5vw;
-}
+  right:.5vw; */
+/* } */ 
 
 /*form styling*/
 .form-container{
-  max-width:40vw; /*relative sizing fo the form container -49% of the viewport width*/
+   /*relative sizing for the form container -49% of the viewport width*/
+   /* max-width:40vw; */
   padding:1vw; 
-  background-color:#ffffff;
-  opacity: 85%;
+  /* background-color:#ffffff; */
+  /* opacity: 85%; */
 }
 
 /*input fields*/
@@ -121,7 +129,7 @@ a{
   font-size:1vw;
 }
 
-/*general stling for all buttons*/
+/*general styling for all buttons*/
 button{
   font-family:"Trebuchet MS", Optima;
   letter-spacing:.3vw;
@@ -146,22 +154,22 @@ button:hover,.form-container .btn:hover{
 .form-container .btn{
 
   color:black;
-  background-color:rgb(199, 112, 144);
-  border-color:rgb(199, 112, 144);
+  background-color: var(--text-color-main);
+  border-color:var(--text-color-main);
   margin-bottom:1vh; /*adds space between submit button and close button*/
 }
 
 /*close button*/
 .form-container .cancel{
-  background-color:rgb(199, 112, 144);
+  background-color:var(--text-color-main);
   color:black;
 }
 
 /*styling for close button on hover*/
 .form-container .cancel:hover{
-  background-color:white;
-  color:rgb(199, 112, 144);
-  border-color:rgb(199, 112, 144);
+  background-color: var(--main-color--light);
+  color: var(--text-color-main);
+  border-color: var(--text-color-main);
 }
 
 /***** END OF CONTACT FORM STYLING *****/
