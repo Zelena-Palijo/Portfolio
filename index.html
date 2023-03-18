@@ -16,25 +16,30 @@
     <body class="background">
 
          <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" 
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
       
 
-      <!-- Navbar -->  
-      <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <a class="nav-link active, text-white" href="#home" onclick="scrollToSection('home')">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active, text-white" href="#about" onclick="scrollToSection('about')">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active, text-white" href="#projects" onclick="scrollToSection('projects')">Project Highlights</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active, text-white" href="#contact" onclick="scrollToSection('contact')">Talk to me</a>
-        </li> 
-      </ul>
+      <!-- Navbar --> 
+      <div class="navbar">
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a class="nav-link active, text-white" href="#home" onclick="scrollToSection('home')">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active, text-white" href="#about" onclick="scrollToSection('about')">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active, text-white" href="#projects" onclick="scrollToSection('projects')">Project Highlights</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active, text-white" href="#contact" onclick="scrollToSection('contact')">Talk to me</a>
+          </li> 
+        </ul>
+      </div> 
+      
 
 
       <!-- HOME PAGE (Also about section)-->
@@ -44,36 +49,64 @@
         <!--INSERT HEADSHOT HERE?-->
         <div class="center" id="about">
             <br>
-            <h1><strong>My name is ZELENA,</strong></h1>
+            <h1>My name is <strong>Zelena</strong>,</h1>
             <h1>but you can call me Z.</h1>
             <p>I am a recent graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s 
               Software Developer Boot Camp. I am a full-stack developer with experience in JavaScript, SQL, C#, and more! </p>
         </div>
 
+        <!-- SOCIAL MEDIA MENU -->
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="https://github.com/Zelena-Palijo">
+                <i class="fa fa-github fa-3x"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa fa-linkedin fa-3x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        
+
         <!-- Coding Highlights -->
 
-        <div class="center" id="projects">
-          <br>
-          <p>Check out my previous and current projects here: </p>
-          <div class="logo">
-            <a href="https://github.com/Zelena-Palijo" class="fa fa-github fa-4x"></a>
+        <div class="center center-projects" id="projects">
+          <div>
+            <h1>Projects</h1>
+            <p>I worked on several projects during my Software Developer Bootcamp.
+              The most recent project involved using ASP/.NET to build a content management
+              service website for a local theatre/acting company. I worked on the back-end
+              portion of the website, creating an entity model and CRUD pages.
+              I also did front-end programming with a focus on client-specific styling. 
+            </p>
           </div>
+          
+          <!-- <div>
+            <p>Here are some snippets: </p>
+            <img src="CreateRental.gif" alt="Create Rental">
+            <img src="sorting.png" alt="Sorting">
+            <img src="cruddropdown.png" alt="dropdown">
+          </div>     -->
         </div>
 
         <!-- Contact Form -->
-        <div class="center" id="contact">
+        <div class="center contact" id="contact">
           <!-- <button onclick="openForm()" class="Pop_Up_Button">Talk to me!</button> -->
           <div id="myForm"> <!--class="form-popup"-->
               <form action="https://formspree.io/zpali853@gmail.com" method="POST" class="form-container">
                   <!--using formspree.io to send contact form to email address-->
-                  <h1>I'd love to hear from you</h1>
-                  <label for="name"><b>name</b></label>
+                  <h1>I'd love to hear from you!</h1>
+                  <label for="name">Name</label>
                       <input type="text" placeholder="Type your name here" name="name" required>
-                  <label for="phone"><b>phone</b></label>
+                  <label for="phone">Phone</label>
                       <input type="text" placeholder="Type your phone number here" name="phone">
-                  <label for="email"><b>email</b></label>
+                  <label for="email">Email</label>
                       <input type="text" placeholder="Type your email address here" name="email" required>
-                  <label for="message"><b>message</b></label>
+                  <label for="message">Message</label>
                       <input type="text" placeholder="Type your message here" name="message">
                   
                   <button type="submit" class="btn">SUBMIT</button>
@@ -84,13 +117,6 @@
 
       </div>
 
-        <!--Footer section-->
-        <!-- <footer>
-            <p>
-                <p class="footer">zelena was here</p>
-                <br>
-            </p>
-        </footer> -->
         <script src="js/new_portfolio.js"></script> <!-- Add new JS file name here -->
     </body>
 </html>
