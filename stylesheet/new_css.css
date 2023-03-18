@@ -57,7 +57,7 @@ html{
   height: 700px;
   /* center vertically and horizontally*/
   position: relative;
-  top: 10%;
+  top: 20%;
   left: 50%;
   margin: -25px 0 0 -25px; /* apply negative top and left margins to truly center the element */
   color: var(--text-color-main);
@@ -78,6 +78,8 @@ img{
   height: auto;
   padding: 10px;
 }
+
+
 
 
 

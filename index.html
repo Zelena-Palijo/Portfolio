@@ -26,9 +26,6 @@
       <div class="navbar">
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a class="nav-link active, text-white" href="#home" onclick="scrollToSection('home')">Home</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link active, text-white" href="#about" onclick="scrollToSection('about')">About</a>
           </li>
           <li class="nav-item">
@@ -44,58 +41,37 @@
 
       <!-- HOME PAGE (Also about section)-->
 
-      <div class="main" id="home" >
+      <div class="main">
         
         <!--INSERT HEADSHOT HERE?-->
         <div class="center" id="about">
-            <br>
             <h1>My name is <strong>Zelena</strong>,</h1>
             <h1>but you can call me Z.</h1>
             <p>I am a recent graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s 
               Software Developer Boot Camp. I am a full-stack developer with experience in JavaScript, SQL, C#, and more! </p>
         </div>
 
-        <!-- SOCIAL MEDIA MENU -->
-        <div class="menu">
-          <ul>
-            <li>
-              <a href="https://github.com/Zelena-Palijo">
-                <i class="fa fa-github fa-3x"></i>
-              </a>
-            </li>
-            <li>
-              <a href="">
-                <i class="fa fa-linkedin fa-3x"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
-        
-
         <!-- Coding Highlights -->
-
         <div class="center center-projects" id="projects">
+          <h1><a href="https://github.com/Zelena-Palijo">Projects</a></h1>
           <div>
-            <h1>Projects</h1>
             <p>I worked on several projects during my Software Developer Bootcamp.
               The most recent project involved using ASP/.NET to build a content management
               service website for a local theatre/acting company. I worked on the back-end
               portion of the website, creating an entity model and CRUD pages.
               I also did front-end programming with a focus on client-specific styling. 
             </p>
-          </div>
-          
-          <!-- <div>
-            <p>Here are some snippets: </p>
-            <img src="CreateRental.gif" alt="Create Rental">
-            <img src="sorting.png" alt="Sorting">
-            <img src="cruddropdown.png" alt="dropdown">
-          </div>     -->
+            <!-- <div>
+              <p>Here are some snippets: </p>
+              <img src="CreateRental.gif" alt="Create Rental">
+              <img src="sorting.png" alt="Sorting">
+              <img src="cruddropdown.png" alt="dropdown">       
+            </div> -->
+          </div>         
         </div>
 
         <!-- Contact Form -->
         <div class="center contact" id="contact">
-          <!-- <button onclick="openForm()" class="Pop_Up_Button">Talk to me!</button> -->
           <div id="myForm"> <!--class="form-popup"-->
               <form action="https://formspree.io/zpali853@gmail.com" method="POST" class="form-container">
                   <!--using formspree.io to send contact form to email address-->
@@ -115,6 +91,22 @@
           </div>
         </div>
 
+      </div>
+
+       <!-- SOCIAL MEDIA MENU -->
+       <div class="menu">
+        <ul>
+          <li>
+            <a href="https://github.com/Zelena-Palijo">
+              <i class="fa fa-github fa-3x"></i>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <i class="fa fa-linkedin fa-3x"></i>
+            </a>
+          </li>
+        </ul>
       </div>
 
         <script src="js/new_portfolio.js"></script> <!-- Add new JS file name here -->
