@@ -63,6 +63,14 @@ html{
   color: var(--text-color-main);
 }
 
+.project{
+  height:fit-content;
+  padding-bottom: 10px;
+}
+
+.contact{
+  padding-top: 10px;
+}
 
 .center p{
   font-size: smaller;
@@ -78,9 +86,6 @@ img{
   height: auto;
   padding: 10px;
 }
-
-
-
 
 
 /* SOCIAL MEDIA MENU STYLING */
@@ -166,26 +171,14 @@ img{
 
 /***** CONTACT FORM STYLING *****/
 
-
-
-
 /*styling for the contact form*/
-/* .form-popup{
-  z-index:8; /*makes sure contact form above all other elements on page*/
-  /*use js to show contact form*/
-  /* display: none;  */
-  /* position:fixed;
-  bottom:.5vw;
-  right:.5vw; */
-/* } */ 
 
 /*form styling*/
 .form-container{
-   /*relative sizing for the form container -49% of the viewport width*/
-   /* max-width:40vw; */
+  max-width:40vw;
   padding:1vw; 
-  /* background-color:#ffffff; */
-  /* opacity: 85%; */
+  /* background-color:#ffffff;  */
+  opacity: 85%;
 }
 
 /*input fields*/
